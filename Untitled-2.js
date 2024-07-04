@@ -1,9 +1,9 @@
+import Calculadora from './calculadora.js';
 
-export function sumar(a, b) {
-    return a + b;
-  }
-  
-export function restar(a, b) {
-    return a - b;
-  }
-  
+const calculadora = new Calculadora();
+
+const resultadoMultiplicacion = calculadora.multiplicar(6, 4);
+const resultadoDivision = calculadora.dividir(8, 2);
+
+console.log(`Multiplicación: ${resultadoMultiplicacion}`);
+console.log(`División: ${resultadoDivision}`);
