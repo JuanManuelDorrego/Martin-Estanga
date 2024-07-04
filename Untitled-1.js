@@ -1,9 +1,11 @@
 
-import { sumar, restar } from './math.js';
+import { Persona } from './persona.js';
 
-const resultadoSuma = sumar(12, 6);
 
-const resultadoResta = restar(15, 5);
+const persona1 = new Persona('Martin', 30);
 
-console.log(`Suma: ${resultadoSuma}`); 
-console.log(`Resta: ${resultadoResta}`); 
+const persona2 = new Persona('Edna Moda', 70);
+
+console.log(persona1.mostrarInformacion());
+
+console.log(persona2.mostrarInformacion());
